@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E31A92AF0ED7FEDBEC60696 /* libPods-YCNetWorking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD140B147C80399664933C4 /* libPods-YCNetWorking.a */; };
 		CF00BB9C25C1684600CE9568 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF00BB9B25C1684600CE9568 /* AppDelegate.m */; };
-		CF00BB9F25C1684600CE9568 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF00BB9E25C1684600CE9568 /* SceneDelegate.m */; };
 		CF00BBA225C1684600CE9568 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF00BBA125C1684600CE9568 /* ViewController.m */; };
 		CF00BBA525C1684600CE9568 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF00BBA325C1684600CE9568 /* Main.storyboard */; };
 		CF00BBA725C1684800CE9568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF00BBA625C1684800CE9568 /* Assets.xcassets */; };
@@ -17,11 +17,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FD140B147C80399664933C4 /* libPods-YCNetWorking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YCNetWorking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA1E99DEB98174B73C201C8 /* Pods-YCNetWorking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCNetWorking.release.xcconfig"; path = "Target Support Files/Pods-YCNetWorking/Pods-YCNetWorking.release.xcconfig"; sourceTree = "<group>"; };
+		B5D6758FEC290A4095009DA2 /* Pods-YCNetWorking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YCNetWorking.debug.xcconfig"; path = "Target Support Files/Pods-YCNetWorking/Pods-YCNetWorking.debug.xcconfig"; sourceTree = "<group>"; };
 		CF00BB9725C1684600CE9568 /* YCNetWorking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCNetWorking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF00BB9A25C1684600CE9568 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF00BB9B25C1684600CE9568 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CF00BB9D25C1684600CE9568 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		CF00BB9E25C1684600CE9568 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		CF00BBA025C1684600CE9568 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CF00BBA125C1684600CE9568 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CF00BBA425C1684600CE9568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E31A92AF0ED7FEDBEC60696 /* libPods-YCNetWorking.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E6F6305569B5601789F0AEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FD140B147C80399664933C4 /* libPods-YCNetWorking.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A359F6CDD636AF60B12399B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5D6758FEC290A4095009DA2 /* Pods-YCNetWorking.debug.xcconfig */,
+				2EA1E99DEB98174B73C201C8 /* Pods-YCNetWorking.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CF00BB8E25C1684600CE9568 = {
 			isa = PBXGroup;
 			children = (
 				CF00BB9925C1684600CE9568 /* YCNetWorking */,
 				CF00BB9825C1684600CE9568 /* Products */,
+				A359F6CDD636AF60B12399B1 /* Pods */,
+				0E6F6305569B5601789F0AEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +84,6 @@
 			children = (
 				CF00BB9A25C1684600CE9568 /* AppDelegate.h */,
 				CF00BB9B25C1684600CE9568 /* AppDelegate.m */,
-				CF00BB9D25C1684600CE9568 /* SceneDelegate.h */,
-				CF00BB9E25C1684600CE9568 /* SceneDelegate.m */,
 				CF00BBA025C1684600CE9568 /* ViewController.h */,
 				CF00BBA125C1684600CE9568 /* ViewController.m */,
 				CF00BBA325C1684600CE9568 /* Main.storyboard */,
@@ -83,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF00BBB025C1684800CE9568 /* Build configuration list for PBXNativeTarget "YCNetWorking" */;
 			buildPhases = (
+				FBC40290B6431421B5324738 /* [CP] Check Pods Manifest.lock */,
 				CF00BB9325C1684600CE9568 /* Sources */,
 				CF00BB9425C1684600CE9568 /* Frameworks */,
 				CF00BB9525C1684600CE9568 /* Resources */,
+				CDED2AE7BFC2B52B5419FD9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +161,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CDED2AE7BFC2B52B5419FD9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YCNetWorking/Pods-YCNetWorking-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YCNetWorking/Pods-YCNetWorking-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YCNetWorking/Pods-YCNetWorking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBC40290B6431421B5324738 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YCNetWorking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF00BB9325C1684600CE9568 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -148,7 +211,6 @@
 				CF00BBA225C1684600CE9568 /* ViewController.m in Sources */,
 				CF00BB9C25C1684600CE9568 /* AppDelegate.m in Sources */,
 				CF00BBAD25C1684800CE9568 /* main.m in Sources */,
-				CF00BB9F25C1684600CE9568 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +350,7 @@
 		};
 		CF00BBB125C1684800CE9568 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5D6758FEC290A4095009DA2 /* Pods-YCNetWorking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +369,7 @@
 		};
 		CF00BBB225C1684800CE9568 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA1E99DEB98174B73C201C8 /* Pods-YCNetWorking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
