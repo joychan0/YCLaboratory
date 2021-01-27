@@ -14,6 +14,7 @@
 		CF00BBA725C1684800CE9568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF00BBA625C1684800CE9568 /* Assets.xcassets */; };
 		CF00BBAA25C1684800CE9568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF00BBA825C1684800CE9568 /* LaunchScreen.storyboard */; };
 		CF00BBAD25C1684800CE9568 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF00BBAC25C1684800CE9568 /* main.m */; };
+		CF00BBCA25C18F3800CE9568 /* YCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF00BBC925C18F3800CE9568 /* YCViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		CF00BBA925C1684800CE9568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF00BBAB25C1684800CE9568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF00BBAC25C1684800CE9568 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF00BBC825C18F3800CE9568 /* YCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCViewController.h; sourceTree = "<group>"; };
+		CF00BBC925C18F3800CE9568 /* YCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 		CF00BB9925C1684600CE9568 /* YCNetWorking */ = {
 			isa = PBXGroup;
 			children = (
+				CF00BBC725C18E8A00CE9568 /* BasicComponent  */,
 				CF00BB9A25C1684600CE9568 /* AppDelegate.h */,
 				CF00BB9B25C1684600CE9568 /* AppDelegate.m */,
 				CF00BBA025C1684600CE9568 /* ViewController.h */,
@@ -93,6 +97,15 @@
 				CF00BBAC25C1684800CE9568 /* main.m */,
 			);
 			path = YCNetWorking;
+			sourceTree = "<group>";
+		};
+		CF00BBC725C18E8A00CE9568 /* BasicComponent  */ = {
+			isa = PBXGroup;
+			children = (
+				CF00BBC825C18F3800CE9568 /* YCViewController.h */,
+				CF00BBC925C18F3800CE9568 /* YCViewController.m */,
+			);
+			path = "BasicComponent ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF00BBCA25C18F3800CE9568 /* YCViewController.m in Sources */,
 				CF00BBA225C1684600CE9568 /* ViewController.m in Sources */,
 				CF00BB9C25C1684600CE9568 /* AppDelegate.m in Sources */,
 				CF00BBAD25C1684800CE9568 /* main.m in Sources */,
