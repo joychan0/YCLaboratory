@@ -15,6 +15,9 @@
 		CF00BBAA25C1684800CE9568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF00BBA825C1684800CE9568 /* LaunchScreen.storyboard */; };
 		CF00BBAD25C1684800CE9568 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF00BBAC25C1684800CE9568 /* main.m */; };
 		CF00BBCA25C18F3800CE9568 /* YCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF00BBC925C18F3800CE9568 /* YCViewController.m */; };
+		CF61F43A25E20DA400C2B52A /* YCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61F43925E20DA400C2B52A /* YCTool.m */; };
+		CF61F43F25E20FC400C2B52A /* YCTool+Device.m in Sources */ = {isa = PBXBuildFile; fileRef = CF61F43E25E20FC400C2B52A /* YCTool+Device.m */; };
+		CFB7D38725C2B5B000BF5B07 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB7D38625C2B5B000BF5B07 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,13 @@
 		CF00BBAC25C1684800CE9568 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF00BBC825C18F3800CE9568 /* YCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCViewController.h; sourceTree = "<group>"; };
 		CF00BBC925C18F3800CE9568 /* YCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCViewController.m; sourceTree = "<group>"; };
+		CF61F43825E20DA400C2B52A /* YCTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCTool.h; sourceTree = "<group>"; };
+		CF61F43925E20DA400C2B52A /* YCTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCTool.m; sourceTree = "<group>"; };
+		CF61F43D25E20FC400C2B52A /* YCTool+Device.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YCTool+Device.h"; sourceTree = "<group>"; };
+		CF61F43E25E20FC400C2B52A /* YCTool+Device.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YCTool+Device.m"; sourceTree = "<group>"; };
+		CFB7D37625C2A83500BF5B07 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CFB7D38525C2B5B000BF5B07 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		CFB7D38625C2B5B000BF5B07 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +95,11 @@
 		CF00BB9925C1684600CE9568 /* YCNetWorking */ = {
 			isa = PBXGroup;
 			children = (
+				CFB7D38425C2B58B00BF5B07 /* MainController */,
 				CF00BBC725C18E8A00CE9568 /* BasicComponent  */,
 				CF00BB9A25C1684600CE9568 /* AppDelegate.h */,
 				CF00BB9B25C1684600CE9568 /* AppDelegate.m */,
+				CFB7D37625C2A83500BF5B07 /* PrefixHeader.pch */,
 				CF00BBA025C1684600CE9568 /* ViewController.h */,
 				CF00BBA125C1684600CE9568 /* ViewController.m */,
 				CF00BBA325C1684600CE9568 /* Main.storyboard */,
@@ -102,10 +114,63 @@
 		CF00BBC725C18E8A00CE9568 /* BasicComponent  */ = {
 			isa = PBXGroup;
 			children = (
+				CFB7D38225C2AADC00BF5B07 /* Networking */,
+				CFB7D38125C2AACE00BF5B07 /* Tool */,
+				CFB7D38025C2AAC300BF5B07 /* Tabbar */,
+				CFB7D37F25C2AAB800BF5B07 /* NavigationController */,
+				CFB7D37E25C2AAA900BF5B07 /* ViewController */,
+			);
+			path = "BasicComponent ";
+			sourceTree = "<group>";
+		};
+		CFB7D37E25C2AAA900BF5B07 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
 				CF00BBC825C18F3800CE9568 /* YCViewController.h */,
 				CF00BBC925C18F3800CE9568 /* YCViewController.m */,
 			);
-			path = "BasicComponent ";
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CFB7D37F25C2AAB800BF5B07 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		CFB7D38025C2AAC300BF5B07 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		CFB7D38125C2AACE00BF5B07 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				CF61F43825E20DA400C2B52A /* YCTool.h */,
+				CF61F43925E20DA400C2B52A /* YCTool.m */,
+				CF61F43D25E20FC400C2B52A /* YCTool+Device.h */,
+				CF61F43E25E20FC400C2B52A /* YCTool+Device.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		CFB7D38225C2AADC00BF5B07 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CFB7D38425C2B58B00BF5B07 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				CFB7D38525C2B5B000BF5B07 /* MainViewController.h */,
+				CFB7D38625C2B5B000BF5B07 /* MainViewController.m */,
+			);
+			path = MainController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +289,10 @@
 				CF00BBCA25C18F3800CE9568 /* YCViewController.m in Sources */,
 				CF00BBA225C1684600CE9568 /* ViewController.m in Sources */,
 				CF00BB9C25C1684600CE9568 /* AppDelegate.m in Sources */,
+				CFB7D38725C2B5B000BF5B07 /* MainViewController.m in Sources */,
 				CF00BBAD25C1684800CE9568 /* main.m in Sources */,
+				CF61F43A25E20DA400C2B52A /* YCTool.m in Sources */,
+				CF61F43F25E20FC400C2B52A /* YCTool+Device.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +359,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -348,6 +417,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -370,6 +440,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 27LTLHMCGP;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = YCNetWorking/PrefixHeader.pch;
 				INFOPLIST_FILE = YCNetWorking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -389,6 +461,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 27LTLHMCGP;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = YCNetWorking/PrefixHeader.pch;
 				INFOPLIST_FILE = YCNetWorking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

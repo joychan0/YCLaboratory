@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.hidesBottomBarWhenPushed = YES;
+    self.view.backgroundColor = UIColor.grayColor;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
